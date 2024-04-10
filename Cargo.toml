@@ -1,0 +1,15 @@
+[package]
+edition = "2021"
+name = "farm_plugin_compression"
+version = "0.0.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+farmfe_core = { version = "*" }
+farmfe_toolkit_plugin_types = { version = "*" }
+farmfe_macro_plugin = { version = "*" }
+serde = { version = "1", features = ["derive"] }
+flate2 = { version = "1.0" }
+serde_json = { version = "1.0" }
