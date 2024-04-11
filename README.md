@@ -1,6 +1,6 @@
 ## farm-plugin-compression
 
-a rust plugin use [flate2](https://crates.io/crates/flate2) for [farm](https://github.com/farm-fe/farm) to compress resources.
+A rust plugin for [farm](https://github.com/farm-fe/farm) to compress resources.
 
 ### Install
 

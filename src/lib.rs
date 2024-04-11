@@ -25,7 +25,7 @@ pub struct FarmPluginCompression {
 }
 
 impl FarmPluginCompression {
-  fn new(config: &Config, options: String) -> Self {
+  fn new(_: &Config, options: String) -> Self {
     Self {
       compression_option: options,
     }
