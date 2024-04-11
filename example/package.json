@@ -16,7 +16,7 @@
     "@farmfe/core": "^1.0.11",
     "@vitejs/plugin-vue": "^5.0.4",
     "core-js": "^3.30.1",
-    "farm-plugin-compression": "../",
+    "farm-plugin-compression": "^0.0.1",
     "vite-plugin-compression2": "^1.0.0"
   }
 }

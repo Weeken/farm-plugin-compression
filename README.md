@@ -12,7 +12,6 @@ pnpm add -D farm-plugin-compression
 
 ```ts
 import { defineConfig } from "@farmfe/core";
-import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [

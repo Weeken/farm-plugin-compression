@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^3.30.1
     version: 3.36.1
   farm-plugin-compression:
-    specifier: ../
-    version: link:..
+    specifier: ^0.0.1
+    version: 0.0.1
   vite-plugin-compression2:
     specifier: ^1.0.0
     version: 1.0.0
@@ -1215,6 +1215,10 @@ packages:
       chardet: 0.7.0
       iconv-lite: 0.4.24
       tmp: 0.0.33
+    dev: true
+
+  /farm-plugin-compression@0.0.1:
+    resolution: {integrity: sha512-VqNW1LXDvN+jbtfIGP8UCJl8WKyBOma75rO5GuV31WKjNXi7mXUOs/b1pZSefX+KqQHgrMpbtwZHDVALafaB7g==}
     dev: true
 
   /fast-fifo@1.3.2:
