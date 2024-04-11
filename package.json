@@ -5,8 +5,12 @@
   "types": "scripts/index.d.ts",
   "type": "module",
   "license": "MIT",
+  "dependencies": {
+    "@farmfe/utils": "^0.0.1",
+    "cac": "^6.7.14"
+  },
   "devDependencies": {
-    "@farmfe/plugin-tools": "latest"
+    "@farmfe/plugin-tools": "^0.1.0"
   },
   "napi": {
     "name": "farm_plugin_compression",
@@ -36,16 +40,5 @@
   "files": [
     "scripts"
   ],
-  "homepage": "https://github.com/Weeken/farm-plugin-compression",
-  "optionalDependencies": {
-    "farm-plugin-compression-win32-x64-msvc": "0.0.1",
-    "farm-plugin-compression-darwin-x64": "0.0.1",
-    "farm-plugin-compression-linux-x64-gnu": "0.0.1",
-    "farm-plugin-compression-darwin-arm64": "0.0.1",
-    "farm-plugin-compression-linux-arm64-gnu": "0.0.1",
-    "farm-plugin-compression-linux-arm64-musl": "0.0.1",
-    "farm-plugin-compression-linux-x64-musl": "0.0.1",
-    "farm-plugin-compression-win32-ia32-msvc": "0.0.1",
-    "farm-plugin-compression-win32-arm64-msvc": "0.0.1"
-  }
+  "homepage": "https://github.com/Weeken/farm-plugin-compression"
 }
