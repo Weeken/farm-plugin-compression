@@ -9,14 +9,12 @@ use farmfe_core::{
   serde_json::{self, Value},
 };
 
-use flate2::Compression;
-
 use farmfe_macro_plugin::farm_plugin;
 
 use std::sync::Arc;
 
 mod utils;
-use crate::utils::{generate_compress_data, insert_resource};
+use crate::utils::{generate_compress_data, get_compress, insert_resource};
 
 #[derive(serde::Deserialize, Debug)]
 #[farm_plugin]
@@ -49,17 +47,11 @@ impl Plugin for FarmPluginCompression {
     if matches!(_context.config.mode, Mode::Production) {
       let options: Value = serde_json::from_str(&self.compression_option).unwrap_or_default();
 
-      let mut compression = Compression::default();
+      let mut compression = get_compress("default");
       if let Some(level) = options.get("level") {
         let result = level.as_str().unwrap();
         // println!("compression: {}", result);
-        match result {
-          "default" => compression = Compression::default(),
-          "none" => compression = Compression::none(),
-          "fast" => compression = Compression::fast(),
-          "best" => compression = Compression::best(),
-          _ => compression = Compression::default(),
-        }
+        compression = get_compress(result);
       }
       let resource_map_clone = _param.resources_map.clone();
 

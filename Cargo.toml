@@ -1,7 +1,8 @@
 [package]
 edition = "2021"
 name = "farm_plugin_compression"
-version = "0.0.1"
+authors = ["Weeken"]
+version = "0.0.3"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
