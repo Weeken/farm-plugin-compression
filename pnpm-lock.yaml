@@ -14,21 +14,27 @@ dependencies:
 
 devDependencies:
   '@farmfe/plugin-tools':
-    specifier: ^0.1.0
-    version: 0.1.0
+    specifier: ^0.1.1
+    version: 0.1.1
 
 packages:
 
-  /@farmfe/plugin-tools@0.1.0:
-    resolution: {integrity: sha512-Q6EDYSNh8s09j6fY9qenU91pZbz/5Uw8UCazCTmjiDO5OcyA0Xzc4dyrXOq7O7HU+sM5534DzBTjpS0ipXUHVg==}
+  /@farmfe/plugin-tools@0.1.1:
+    resolution: {integrity: sha512-7ox1VgCI5AWFrIUQVLEYGdqCSGNBJYRC0Yhu5sK0a/sR/OSaZa97MdiKA80LkM6UgK+dDFy49rPre10U/M7yww==}
     hasBin: true
     dependencies:
+      '@farmfe/utils': 0.1.0
       '@napi-rs/cli': 2.18.0
+      cac: 6.7.14
     dev: true
 
   /@farmfe/utils@0.0.1:
     resolution: {integrity: sha512-QLbgNrojcvxfumXA/H329XAXhoCahmeSH3JmaiwwJEGS2QAmWfgAJMegjwlt6OmArGVO4gSbJ7Xbmm1idZZs+g==}
     dev: false
+
+  /@farmfe/utils@0.1.0:
+    resolution: {integrity: sha512-neNJQGqV7XL4XifG1uHOBFSFLy2yx1/DVZNRA7nfeEAXEksVZTwWA+fZrYEaI0w7Sw6K/9NYn9Jgpn+NAT0mcg==}
+    dev: true
 
   /@napi-rs/cli@2.18.0:
     resolution: {integrity: sha512-lfSRT7cs3iC4L+kv9suGYQEezn5Nii7Kpu+THsYVI0tA1Vh59LH45p4QADaD7hvIkmOz79eEGtoKQ9nAkAPkzA==}
@@ -39,4 +45,3 @@ packages:
   /cac@6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
     engines: {node: '>=8'}
-    dev: false
