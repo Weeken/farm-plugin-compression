@@ -10,7 +10,7 @@
     "cac": "^6.7.14"
   },
   "devDependencies": {
-    "@farmfe/plugin-tools": "^0.1.0"
+    "@farmfe/plugin-tools": "^0.1.1"
   },
   "napi": {
     "name": "farm_plugin_compression",
