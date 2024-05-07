@@ -9,6 +9,11 @@ export default defineConfig({
   //     assetsFilename: "static/[resourceName].[ext]",
   //   },
   // },
-  plugins: [["farm-plugin-compression", { level: "best" }]],
+  plugins: [
+    [
+      "farm-plugin-compression",
+      { level: "best", exclude: ["svg", "html", "map"] },
+    ],
+  ],
   vitePlugins: [vue()],
 });
