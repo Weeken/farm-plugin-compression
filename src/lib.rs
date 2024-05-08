@@ -46,7 +46,7 @@ impl Plugin for FarmPluginCompression {
   ) -> Result<Option<()>> {
     if matches!(_context.config.mode, Mode::Production) {
       let options: Value = serde_json::from_str(&self.compression_option).unwrap_or_default();
-      println!("options: {}", options);
+      // println!("options: {}", options);
       let mut compression = get_compress("default");
       let mut exclude_list: Vec<String> = vec![];
       if let Some(level) = options.get("level") {
@@ -60,7 +60,7 @@ impl Plugin for FarmPluginCompression {
           exclude_list.push(ele.as_str().unwrap().to_string())
         }
       }
-      println!("exclude_list: {:?}", exclude_list);
+      // println!("exclude_list: {:?}", exclude_list);
       let resource_map_clone = _param.resources_map.clone();
 
       for (name, resource) in resource_map_clone.iter() {

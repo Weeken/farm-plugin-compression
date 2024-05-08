@@ -40,5 +40,15 @@
   "files": [
     "scripts"
   ],
-  "homepage": "https://github.com/Weeken/farm-plugin-compression"
+  "homepage": "https://github.com/Weeken/farm-plugin-compression",
+  "keywords": [
+    "farm",
+    "farm plugin",
+    "farm-plugin",
+    "farm-plugin-compression",
+    "rust plugin",
+    "compression",
+    "gz",
+    ".gz"
+  ]
 }
