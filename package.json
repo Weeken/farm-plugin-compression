@@ -1,6 +1,6 @@
 {
   "name": "farm-plugin-compression",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "scripts/index.js",
   "types": "scripts/index.d.ts",
   "type": "module",
@@ -40,5 +40,15 @@
   "files": [
     "scripts"
   ],
-  "homepage": "https://github.com/Weeken/farm-plugin-compression"
+  "homepage": "https://github.com/Weeken/farm-plugin-compression",
+  "keywords": [
+    "farm",
+    "farm plugin",
+    "farm-plugin",
+    "farm-plugin-compression",
+    "rust plugin",
+    "compression",
+    "gz",
+    ".gz"
+  ]
 }

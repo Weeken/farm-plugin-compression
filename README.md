@@ -17,7 +17,10 @@ export default defineConfig({
   plugins: [
     [
       "farm-plugin-compression",
-      { level: "best" }, // level: "best" | "none" | "default" | "fast"
+      {
+        level: "best", // level: "best" | "none" | "default" | "fast"
+        exclude: ["jpg", "png"], // resource type like jpg, png, and others generate in dist
+      },
     ],
   ],
 });
