@@ -39,5 +39,16 @@
   "files": [
     "scripts",
     "options.d.ts"
+  ],
+  "homepage": "https://github.com/Weeken/farm-plugin-compression",
+  "keywords": [
+    "farm",
+    "farm plugin",
+    "farm-plugin",
+    "farm-plugin-compression",
+    "rust plugin",
+    "compression",
+    "gz",
+    ".gz"
   ]
 }
