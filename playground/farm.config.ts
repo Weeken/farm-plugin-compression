@@ -1,4 +1,6 @@
 import { defineConfig } from "@farmfe/core";
+import react from "@farmfe/plugin-react";
+import compression from "farm-plugin-compression";
 
 export default defineConfig({
   compilation: {
@@ -9,10 +11,7 @@ export default defineConfig({
     progress: false,
   },
   plugins: [
-    ["@farmfe/plugin-react", { runtime: "automatic" }],
-    [
-      "farm-plugin-compression",
-      { level: "best", exclude: ["svg", "html", "map"] },
-    ],
+    react({ runtime: "automatic" }),
+    compression({ level: "best", exclude: ["svg", "html", "map"] }),
   ],
 });
